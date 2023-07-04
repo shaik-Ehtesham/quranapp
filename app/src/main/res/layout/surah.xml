@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/juzz"
+                android:id="@+id/juzz"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="juzzname"
+                    android:textColor="#F6A022"
+                    android:textSize="25sp"
+                    android:id="@+id/surahname"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="juzzarabic"
+                    android:id="@+id/suraharabic"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

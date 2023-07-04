@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ramadan">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcv"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/harbg"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="RAMADAN"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="30sp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@id/rcv"
+        android:layout_height="match_parent"
+        android:id="@+id/ramadanrecycler"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>
